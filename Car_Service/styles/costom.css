@@ -21,12 +21,12 @@ body {
     font-size: 14px;
     color: #ffffff;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -49,6 +49,29 @@ button:focus {
     padding: 0px 15px;
 }
 
+/* ////////////////// */
+
+.fa {
+    color: #f3b93e;
+    font-size: 30px;
+}
+
+.fa-bars:before {
+    font-size: 40px;
+}
+
+.mobile__toggle i {
+    display: none;
+}
+
+.mobile__toggle [type="checkbox"] {
+    display: none;
+}
+
+.mobile__toggle__menu {
+    display: none;
+}
+
 /* Header */
 
 .header__flex {
@@ -56,16 +79,16 @@ button:focus {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .header_top {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     min-height: 110px;
     border-bottom: 2px solid rgba(51, 51, 51, 0.2);
     background-color: rgb(71 71 71 / 0.5);
@@ -91,6 +114,150 @@ button:focus {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Nav */
+
+.nav__menu {
+    overflow: hidden;
+}
+
+.nav__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav__menu ul li {
+    list-style-type: none;
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    color: #cccccc;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding-left: 30px;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    color: #f3b93e;
+}
+
+.nav__ul li:last-child {
+    padding-right: 75px;
+}
+
+/* Phone */
+
+.phone__img {
+    width: 20px;
+    height: 20px;
+    fill: #e0aa39;
+}
+
+.phone__number {
+    margin: 46px 0px 0px 0px;
+    padding-left: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+/* Main */
+
+.main__intro {
+    background: #212121 url(../img/auto_repair_bg_title.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.main__intro__inner {
+    padding-top: 420px;
+    padding-bottom: 490px;
+}
+
+.main__intro__title {
+    font-size: 127px;
+    font-weight: 300;
+    text-align: start;
+    margin: 0px;
+}
+
+.main__intro__subtitle {
+    font-size: 30px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.main__intro__button {
+    font-family: 'Ubuntu', sans-serif;
+   
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid rgb(255, 255, 255);
+    background-image: none;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    height: 50px;
+    width: 200px;
+    margin-top: 48px;
+    text-transform: uppercase;
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+.main__intro__button:hover {
+    color: #f3b93e;
+}
+
+.main__intro_rightshape {
+    position: absolute;
+    right: 0;
+    top: 317px;
+    z-index: 50;
+}
+
+.main__intro__rightshape__icons_right_arrow {
+    position: absolute;
+    right: 40px;
+    top: 540px;
+    width: 35px;
+    height: 25px;
+    z-index: 60;
+    fill: #aa812b;
+    -webkit-transition: fill .2s linear;
+    -o-transition: fill .2s linear;
+    transition: fill .2s linear;
+}
+
+.main__intro__rightshape__icons_right_arrow:hover {
+    fill: #fff;
+}
+
+.main__intro__rightshape__icons_left_arrow {
+    position: absolute;
+    right: 40px;
+    top: 575px;
+    width: 35px;
+    height: 25px;
+    z-index: 60;
+    fill: #aa812b;
+    -webkit-transition: fill .2s linear;
+    -o-transition: fill .2s linear;
+    transition: fill .2s linear;
+}
+
+.main__intro__rightshape__icons_left_arrow:hover {
+    fill: #ffffff;
 }
