@@ -1,0 +1,1 @@
+$(".certified__right__side__slider").slick({dots:!0,infinite:!0,speed:300,slidesToShow:2,slidesToScroll:1,autoplay:!0,autoplaySpeed:4e3,responsive:[{breakpoint:767,settings:{slidesToShow:1,slidesToScroll:1}}]})
