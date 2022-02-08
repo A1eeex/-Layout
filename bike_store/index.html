@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="bike, store">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="application-name" content="bike_store">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/custom.css">
+    <link href="./icons/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+
+    <link href="//db.onlinewebfonts.com/c/54f5f645f140cd68536c94c32f92d865?family=Flama" rel="stylesheet"
+          type="text/css"/>
+
+    <title>Bike_store</title>
+</head>
+<body>
+<div class="container">
+    <!--    HEADER-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="wrap_header_menu">
+
+                <div class="wrap_logo">
+                    <a href="#">
+                        <img src="./img/logotyp_top.svg" width="242" alt="logotyp">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03"
+                        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+
+            <form class="d-flex">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <div class="wrap_search navbar-nav">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Czego szukasz?">
+                    </div>
+                    <div class="wrap_icons_navigations">
+
+                        <div class="item_naw">
+                            <a href="#">
+                                <img src="./icons/person_icon.svg" alt="person_icon">
+                                <div class="item_naw_title">
+                                    dominik
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item_naw">
+                            <a href="#">
+                                <img src="./icons/arrows_icon.svg" alt="arrows_icon">
+                                <div class="item_naw_title">
+                                    dominik
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item_naw">
+                            <a href="#">
+                                <img src="./icons/heart_icon.svg" alt="person_icon">
+                                <div class="item_naw_title">
+                                    Lista życzeń
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_naw">
+                            <a href="#">
+                                <img src="./icons/basket_icon.svg" alt="basket_icon">
+                                <div class="item_naw_title">
+                                    Koszyk
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </nav>
+        <div>
+            <ul class="nav_pages_wrapper">
+                <li><a href="">rowery</a></li>
+                <li><a href="">akcesoria</a></li>
+                <li><a href="">części</a></li>
+                <li><a href="">odziesz</a></li>
+                <li><a href="">serwis</a></li>
+                <li><a href="">marki</a></li>
+                <li><a href="">nowiści</a></li>
+                <li><a href="">wyprzedaże</a></li>
+            </ul>
+        </div>
+        <div class="header_border"></div>
+    </header>
+
+    <!--    ORDER BIKE-section-->
+    <section class='order_bike'>
+        <nav>
+            <ol class="order_bike_header">
+                <li><a href="#">strona glówna</a></li>
+                <li>></li>
+                <li><a href="#">rowery</a></li>
+                <li>></li>
+                <li aria-current="page">rowery turestyczne</li>
+            </ol>
+        </nav>
+        <div class="order_bike_info">
+            <div class="order_bike_info_left">
+                <div class="slider_item_wrap">
+                    <div class="slider_item">
+                        <img src="./img/bicycle.jpg" alt="bicycle">
+                    </div>
+
+                    <div class="slider_item">
+                        <img src="./img/bicycle2.jpg" alt="bicycle2">
+                    </div>
+
+                    <div class="slider_item">
+                        <img src="./img/bicycle.jpg" alt="bicycle">
+                    </div>
+
+                    <div class="slider_item">
+                        <img src="./img/bicycle2.jpg" alt="bicycle2">
+                    </div>
+
+                    <div class="slider_item">
+                        <img src="./img/bicycle.jpg" alt="bicycle">
+                    </div>
+
+                </div>
+                <div class="big_item">
+                    <img src="./img/bicycle3.jpg" alt="bicycle3">
+                </div>
+            </div>
+            <div class="order_bike_info_right">
+                <div class="for_buy_info">
+                    <h1 class="for_buy_title">
+                        Specialized Diverge Sport Carbon długa nazwa prod
+                    </h1>
+                    <div class="for_buy_price_wrap">
+                        <span class="for_buy_price_title">treck</span>
+                        <span class="for_buy_price_opinion">
+                                <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                                <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                                <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                                <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                                <img src="./icons/star_icon_empty.svg" alt="star_icon_empty">
+                                <span class="price_opinions_count"><a href="#">12 opinii</a></span>
+                            </span>
+                    </div>
+                    <div class="price_bike_wrap">
+                        <div class="price_bike_now">1234 zł
+                            <div class="bottom_line">
+                                <div class="bottom_line_filed"></div>
+                            </div>
+                        </div>
+                        <span class="price_bike_old"><s>4321 zł</s></span>
+                    </div>
+                    <div class="select_buy_form_wrapper">
+                        <form>
+                            <div class="select_item_wrap">
+                                <span class="select_buy_title">Kolor:</span>
+                                <select class="select_buy" name="select_color">
+                                    <option selected value="green-black">zielony-czarny</option>
+                                    <option value="value2">czarny</option>
+                                    <option value="value3">zielony</option>
+                                </select>
+                            </div>
+                            <div class="select_item_wrap">
+                                <span class="select_buy_title select_size">Wybierz Rozmiar:</span>
+                                <select class="select_buy" name="select_color">
+                                    <option selected value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+                            <div class="size_guidance">
+                                <span class="ruler_icon"><img src="./icons/ruler_icon.svg" alt="ruler_icon"></span>
+                                <a href="#">
+                                    <p>Wskazówki dotyczące rozmiarów</p>
+                                </a>
+                            </div>
+                            <button class='btn btn-dark'>
+                                <div>
+                                    <span>DODAJ DO KOSZYKA</span> <img src="./icons/bag_icon.svg" alt="bag_icon">
+                                </div>
+
+                            </button>
+                            <button class='btn btn-transparent'>
+                                <span>DODAJ DO KOSZYKA</span> <img src="./icons/circle_heart_icon.svg"
+                                                                   alt="heart_circle_icon">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="product_info_wrap">
+                        <div class="product_info_code_wrap">
+                            <span>Kod produktu:</span>
+                            <span><b>CDN20872</b></span>
+                        </div>
+
+                        <div class="product_more_info_wrap">
+                            <i class="fas fa-check icon_check_product"></i>
+                            <span><a href="#">Dostępność: <b>24 szt.</b></a></span>
+                        </div>
+                        <div class="product_more_info_wrap">
+                            <i class="far fa-clock"></i>
+                            <span><a href="#">Czas realizacji: <b>wysyłamy dzisiaj</b></a></span>
+                        </div>
+                        <div class="product_more_info_wrap">
+                            <i class="fas fa-truck"></i>
+                            <span><a href="#">Koszt dostawy: <b>od 8 zł</b></a></span>
+                        </div>
+                        <div class="product_more_info_wrap">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span><a href="#"> Dodaj do porównania</a> </span>
+                        </div>
+                    </div>
+
+                    <div class="product_accordion_wrap">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                        OPIS
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong> OPIS This is the first item's accordion body.</strong> It is shown
+                                        by
+                                        default, until the collapse plugin adds the appropriate classes that we use
+                                        to style each element. These classes control the overall appearance, as well
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                        SZCZEGÓŁY
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong> SZCZEGÓŁY This is the second item's accordion body.</strong> It is
+                                        hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                        CZAS I KOSZT DOSTAWY
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong> CZAS I KOSZT DOSTAWY This is the third item's accordion
+                                            body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                        OPINIE (12)
+                                    </button>
+                                </h2>
+                                <div id='collapseFour' class="accordion-collapse collapse"
+                                     aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>OPINIE (12) This is the third item's accordion body.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                        ZAPYTAJ O PRODUKT
+                                    </button>
+                                </h2>
+                                <div id='collapseFive' class="accordion-collapse collapse"
+                                     aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong> ZAPYTAJ O PRODUKT This is the third item's accordion body.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    RECOMMENDED-section-->
+    <section class="recommended">
+        <h2 class="recommended_title">
+            POLECANE W RÓWNIEŻ
+        </h2>
+        <div class="recommended_slider_wrap">
+
+            <div class="recommended_card_wrap">
+                <div class="card_img_wrap">
+                    <img src="./img/bicycle3.jpg" alt="bicycle5">
+                    <div class="bestseller__card-active">Bestseller</div>
+                </div>
+                <div class="average_grade_wrap transparent">
+                    <div>Średnia ocena</div>
+                    <div>
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_empty.svg" alt="star_icon_empty">
+                    </div>
+                </div>
+                <p class="card_text">TREK Hexagon 1.0 2019 czarny</p>
+                <p class="transparent">empty </p>
+                <p class="card_title">TREK</p>
+                <div class="card_price">
+                    <div> 3 869 zł</div>
+                    <div><img src="./icons/circle_heart_icon.svg" alt="circle_heart_icon"></div>
+                </div>
+            </div>
+
+            <div class="recommended_card_wrap">
+                <div class="card_img_wrap">
+                    <img src="./img/bicycle3.jpg" alt="bicycle5">
+                    <div class="bestseller__card-active">Bestseller</div>
+                </div>
+                <div class="average_grade_wrap transparent">
+                    <div>Średnia ocena</div>
+                    <div>
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_empty.svg" alt="star_icon_empty">
+                    </div>
+                </div>
+                <p class="card_text">TREK Hexagon 1.0 2019 czarny</p>
+                <p class="transparent">empty </p>
+                <p class="card_title">KROSS</p>
+                <div class="card_price">
+                    <div> 3 869 zł</div>
+                    <div><img src="./icons/circle_heart_icon.svg" alt="circle_heart_icon"></div>
+                </div>
+            </div>
+
+            <div class="recommended_card_wrap">
+                <div class="card_img_wrap">
+                    <img src="./img/bicycle3.jpg" alt="bicycle5">
+                    <div class="bestseller__card">Bestseller</div>
+                </div>
+                <div class="average_grade_wrap transparent">
+                    <div>Średnia ocena</div>
+                    <div>
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_empty.svg" alt="star_icon_empty">
+                    </div>
+                </div>
+                <p class="card_text">TREK Hexagon 1.0 2019 czarny</p>
+                <p class="transparent">empty </p>
+                <p class="card_title">SPECIALIZED</p>
+                <div class="card_price">
+                    <div> 11 869 zł</div>
+                    <div><img src="./icons/circle_heart_icon.svg" alt="circle_heart_icon"></div>
+                </div>
+            </div>
+
+            <div class="recommended_card_wrap">
+                <div class="card_img_wrap">
+                    <img src="./img/bicycle3.jpg" alt="bicycle5">
+                    <div class="bestseller__card-active">Bestseller</div>
+                </div>
+                <div class="average_grade_wrap">
+                    <div>Średnia ocena</div>
+                    <div>
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_empty.svg" alt="star_icon_empty">
+                    </div>
+                </div>
+
+                <p class="card_text">TREK Hexagon 1.0 2019 czarny</p>
+                <p> Drugi wiersz</p>
+                <p class="card_title">TREK</p>
+                <div class="card_price">
+                    <div> 3 869 zł</div>
+                    <div><img src="./icons/circle_heart_icon.svg" alt="circle_heart_icon"></div>
+                </div>
+            </div>
+
+            <div class="recommended_card_wrap">
+                <div class="card_img_wrap">
+                    <img src="./img/bicycle3.jpg" alt="bicycle5">
+                    <div class="bestseller__card-active">Bestseller</div>
+                </div>
+                <div class="often_bought_btn_wrap">
+                    <button class="often_bought_btn">Często kupowane</button>
+                </div>
+                <p class="card_text">TREK Hexagon 1.0 2019 czarny</p>
+                <p> Drugi wiersz</p>
+                <p class="card_title">TREK</p>
+                <div class="card_price">
+                    <div> 3 869 zł</div>
+                    <div><img src="./icons/circle_heart_icon.svg" alt="circle_heart_icon"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="recommended">
+        <h2 class="recommended_title">
+            POLECANE W RÓWNIEŻ
+        </h2>
+        <div class="recommended_slider_wrap">
+
+            <div class="recommended_card_wrap autoplay">
+                <div class="card_img_wrap">
+                    <img src="./img/bicycle3.jpg" alt="bicycle5">
+                    <div class="bestseller__card-active">Bestseller</div>
+                </div>
+                <div class="average_grade_wrap transparent">
+                    <div>Średnia ocena</div>
+                    <div>
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_empty.svg" alt="star_icon_empty">
+                    </div>
+                </div>
+                <p class="card_text">TREK Hexagon 1.0 2019 czarny</p>
+                <p class="transparent">empty </p>
+                <p class="card_title">TREK</p>
+                <div class="card_price">
+                    <div> 3 869 zł</div>
+                    <div><img src="./icons/circle_heart_icon.svg" alt="circle_heart_icon"></div>
+                </div>
+            </div>
+
+            <div class="recommended_card_wrap">
+                <div class="card_img_wrap">
+                    <img src="./img/bicycle3.jpg" alt="bicycle5">
+                    <div class="bestseller__card-active">Bestseller</div>
+                </div>
+                <div class="average_grade_wrap transparent">
+                    <div>Średnia ocena</div>
+                    <div>
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_empty.svg" alt="star_icon_empty">
+                    </div>
+                </div>
+                <p class="card_text">TREK Hexagon 1.0 2019 czarny</p>
+                <p class="transparent">empty </p>
+                <p class="card_title">KROSS</p>
+                <div class="card_price">
+                    <div> 3 869 zł</div>
+                    <div><img src="./icons/circle_heart_icon.svg" alt="circle_heart_icon"></div>
+                </div>
+            </div>
+
+            <div class="recommended_card_wrap">
+                <div class="card_img_wrap">
+                    <img src="./img/bicycle3.jpg" alt="bicycle5">
+                    <div class="bestseller__card">Bestseller</div>
+                </div>
+                <div class="average_grade_wrap transparent">
+                    <div>Średnia ocena</div>
+                    <div>
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_empty.svg" alt="star_icon_empty">
+                    </div>
+                </div>
+                <p class="card_text">TREK Hexagon 1.0 2019 czarny</p>
+                <p class="transparent">empty </p>
+                <p class="card_title">SPECIALIZED</p>
+                <div class="card_price">
+                    <div> 11 869 zł</div>
+                    <div><img src="./icons/circle_heart_icon.svg" alt="circle_heart_icon"></div>
+                </div>
+            </div>
+
+            <div class="recommended_card_wrap">
+                <div class="card_img_wrap">
+                    <img src="./img/bicycle3.jpg" alt="bicycle5">
+                    <div class="bestseller__card-active">Bestseller</div>
+                </div>
+                <div class="average_grade_wrap">
+                    <div>Średnia ocena</div>
+                    <div>
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_full.svg" alt="star_icon_full">
+                        <img src="./icons/star_icon_empty.svg" alt="star_icon_empty">
+                    </div>
+                </div>
+
+                <p class="card_text">TREK Hexagon 1.0 2019 czarny</p>
+                <p> Drugi wiersz</p>
+                <p class="card_title">TREK</p>
+                <div class="card_price">
+                    <div> 3 869 zł</div>
+                    <div><img src="./icons/circle_heart_icon.svg" alt="circle_heart_icon"></div>
+                </div>
+            </div>
+
+            <div class="recommended_card_wrap">
+                <div class="card_img_wrap">
+                    <img src="./img/bicycle3.jpg" alt="bicycle5">
+                    <div class="bestseller__card-active">Bestseller</div>
+                </div>
+                <div class="often_bought_btn_wrap">
+                    <button class="often_bought_btn">Często kupowane</button>
+                </div>
+                <p class="card_text">TREK Hexagon 1.0 2019 czarny</p>
+                <p> Drugi wiersz</p>
+                <p class="card_title">TREK</p>
+                <div class="card_price">
+                    <div> 3 869 zł</div>
+                    <div><img src="./icons/circle_heart_icon.svg" alt="circle_heart_icon"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+<!--PROMOTION-->
+<section class="promotion_section">
+    <div class="container">
+        <div class="bottom_container">
+            <div class="left_promotion_info">
+                <h2 class="promotion_title">
+                    Zdobądź <span class="promotion_procent">10%</span> zniżki na pierwsze zamówienie!
+                </h2>
+                <p class="promotion_sub_title">Zapisz się do naszego newslettera, otrzymuj powiadomienia o nowościach i
+                    promocjach</p>
+            </div>
+            <div class="right_promotion_info">
+                <form class="form_send_mail">
+                    <input class="form_send_mail_input" placeholder="Twój adres e-mail" type="email">
+                    <button type="button" class="btn btn-dark">ZAPISZ SIĘ</button>
+                </form>
+                <div class="send_info">
+                    <p>Twoje dane będziemy przetwarzać zgodnie z naszą <a href="#">polityką prywatności</a></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--FOOTER-->
+<footer class="footer_section">
+    <div class="bottom_container">
+        <div class="footer_contacts_wrapper">
+
+            <div class="footer_contacts_column">
+                <div class="footer_contact_title">
+                    INFORMACJE
+                </div>
+                <div class="footer_contact_sub_title">
+                    Regulamin
+                </div>
+                <div class="footer_contact_sub_title">
+                    O firmie
+                </div>
+                <div class="footer_contact_sub_title">
+                    Kontakt
+                </div>
+                <div class="footer_contact_sub_title">
+                    Polityka prywatności
+                </div>
+                <div class="footer_contact_sub_title">
+                     Dostęp do danych osobowych
+                </div>
+            </div>
+
+            <div class="footer_contacts_column">
+                <div class="footer_contact_title">
+                    POMOC
+                </div>
+                <div class="footer_contact_sub_title">
+                    FAQ
+                </div>
+                <div class="footer_contact_sub_title">
+                    Dostawa i płatność
+                </div>
+                <div class="footer_contact_sub_title">
+                    Zwrot Reklamacja
+                </div>
+            </div>
+            <div class="footer_contacts_column">
+                <div class="footer_contact_title">
+                    TWOJE KONTO
+                </div>
+                <div class="footer_contact_sub_title">
+                    Twoje
+                </div>
+                <div class="footer_contact_sub_title">
+                    Twoje zamówienia
+                </div>
+                <div class="footer_contact_sub_title">
+                    Rejestracja
+                </div>
+                <div class="footer_contact_sub_title">
+                    Logowanie
+                </div>
+            </div>
+
+            <div class="footer_contacts_column">
+                <div class="footer_contact_title">
+                    DOŁĄCZ DO NAS NA
+                </div>
+                <div class="footer_contact_icons">
+                    <i class="fa-brands fa-facebook-square"></i> icon 2
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+<script src="./js/custom.js"></script>
+</body>
+</html>
