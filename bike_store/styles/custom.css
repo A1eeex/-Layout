@@ -608,7 +608,8 @@
 .footer_bottom_wrap_info {
     display: flex;
     justify-content: space-between;
-    margin: 25px 0 25px 25px;
+    margin-top: 25px;
+    padding-bottom: 25px;
 }
 
 .footer_copyright {
@@ -674,13 +675,15 @@
     /*HEADER*/
     .wrap_search {
         width: 100%;
-        padding:5px;
-        flex-wrap:wrap;
+        padding: 5px;
+        flex-wrap: wrap;
     }
+
     .wrap_icons_navigations {
 
         margin-left: 0px;
     }
+
     /*ORDER_BIKE-SLIDER*/
     .slider_item_wrap {
         display: none;
@@ -713,6 +716,11 @@
 }
 
 @media (max-width: 800px) {
+    /*HEADER*/
+    .nav_pages_wrapper {
+        display: none;
+    }
+
     /*PROMOTION*/
     .wrap_promotion_info {
         display: block;
@@ -737,20 +745,11 @@
         margin-bottom: 70px;
     }
 }
-@media (max-width: 610px) {
-    /*SLIDER-RECOMMENDED*/
-    .recommended_card_wrap:nth-last-child(4) {
-        display: none
-    }
-}
+
 @media (max-width: 770px) {
     /*HEADER*/
     .header_border {
         border: none;
-    }
-
-    .nav_pages_wrapper {
-        display: none;
     }
 
     .order_bike_info {
@@ -773,11 +772,33 @@
         margin-top: 40px;
     }
 
-    /*SECTION ORDER*/
 }
+
+@media (max-width: 610px) {
+    /*SLIDER-RECOMMENDED*/
+    .recommended_card_wrap:nth-last-child(4) {
+        display: none
+    }
+}
+
 @media (max-width: 440px) {
+    /*HEADER*/
+    .wrap_logo {
+        margin: 0px;
+    }
+
+    /*FOOTER*/
     .footer_contacts_column {
         width: 100%;
         padding: 0 20px 0 20px;
+    }
+
+    .form_send_mail input {
+        margin: 0px;
+    }
+
+    .form_send_mail button {
+        min-width: 260px;
+        margin-top: 15px;
     }
 }
