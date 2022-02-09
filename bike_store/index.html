@@ -25,68 +25,70 @@
 <div class="container">
     <!--    HEADER-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="wrap_header_menu">
+        <div class="naw_header_wrap">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="wrap_header_menu">
 
-                <div class="wrap_logo">
-                    <a href="#">
-                        <img src="./img/logotyp_top.svg" width="242" alt="logotyp">
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo03"
-                        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-            </div>
-
-            <form class="d-flex">
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <div class="wrap_search navbar-nav">
-                        <i class="fas fa-search"></i>
-                        <input type="text" placeholder="Czego szukasz?">
+                    <div class="wrap_logo">
+                        <a href="#">
+                            <img src="./img/logotyp_top.svg" width="242" alt="logotyp">
+                        </a>
                     </div>
-                    <div class="wrap_icons_navigations">
-
-                        <div class="item_naw">
-                            <a href="#">
-                                <img src="./icons/person_icon.svg" alt="person_icon">
-                                <div class="item_naw_title">
-                                    dominik
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="item_naw">
-                            <a href="#">
-                                <img src="./icons/arrows_icon.svg" alt="arrows_icon">
-                                <div class="item_naw_title">
-                                    dominik
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="item_naw">
-                            <a href="#">
-                                <img src="./icons/heart_icon.svg" alt="person_icon">
-                                <div class="item_naw_title">
-                                    Lista życzeń
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item_naw">
-                            <a href="#">
-                                <img src="./icons/basket_icon.svg" alt="basket_icon">
-                                <div class="item_naw_title">
-                                    Koszyk
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo03"
+                            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-            </form>
-        </nav>
+
+                <form class="d-flex">
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <div class="wrap_search navbar-nav">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Czego szukasz?">
+                            </div>
+                            <div class="wrap_icons_navigations">
+                                <div class="item_naw">
+                                    <a href="#">
+                                        <img src="./icons/person_icon.svg" alt="person_icon">
+                                        <div class="item_naw_title">
+                                            dominik
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item_naw">
+                                    <a href="#">
+                                        <img src="./icons/arrows_icon.svg" alt="arrows_icon">
+                                        <div class="item_naw_title">
+                                            dominik
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item_naw">
+                                    <a href="#">
+                                        <img src="./icons/heart_icon.svg" alt="person_icon">
+                                        <div class="item_naw_title">
+                                            Lista życzeń
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item_naw">
+                                    <a href="#">
+                                        <img src="./icons/basket_icon.svg" alt="basket_icon">
+                                        <div class="item_naw_title">
+                                            Koszyk
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                </form>
+            </nav>
+        </div>
+
         <div>
             <ul class="nav_pages_wrapper">
                 <li><a href="">rowery</a></li>
@@ -565,23 +567,26 @@
 <section class="promotion_section">
     <div class="container">
         <div class="bottom_container">
-            <div class="left_promotion_info">
-                <h2 class="promotion_title">
-                    Zdobądź <span class="promotion_procent">10%</span> zniżki na pierwsze zamówienie!
-                </h2>
-                <p class="promotion_sub_title">Zapisz się do naszego newslettera, otrzymuj powiadomienia o nowościach i
-                    promocjach</p>
-            </div>
-            <div class="right_promotion_info">
-                <form class="form_send_mail">
-                    <input class="form_send_mail_input" placeholder="Twój adres e-mail" type="email">
-                    <button type="button" class="btn btn-dark">ZAPISZ SIĘ</button>
-                </form>
-                <div class="send_info">
-                    <p>Twoje dane będziemy przetwarzać zgodnie z naszą <a href="#">polityką prywatności</a></p>
+            <div class="wrap_promotion_info">
+                <div class="left_promotion_info">
+                    <h2 class="promotion_title">
+                        Zdobądź <span class="promotion_procent">10%</span> zniżki na pierwsze zamówienie!
+                    </h2>
+                    <p class="promotion_sub_title">Zapisz się do naszego newslettera, otrzymuj powiadomienia o nowościach i
+                        promocjach</p>
                 </div>
+                <div class="right_promotion_info">
+                    <form class="form_send_mail">
+                        <input class="form_send_mail_input" placeholder="Twój adres e-mail" type="email">
+                        <button type="button" class="btn btn-dark">ZAPISZ SIĘ</button>
+                    </form>
+                    <div class="send_info">
+                        <p>Twoje dane będziemy przetwarzać zgodnie z naszą <a href="#">polityką prywatności</a></p>
+                    </div>
 
+                </div>
             </div>
+
         </div>
 
     </div>
@@ -650,8 +655,8 @@
                         DOŁĄCZ DO NAS NA
                     </div>
                     <div class="footer_contact_icons">
-                        <i class="fa-brands fa-facebook-square"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
 
                 </div>

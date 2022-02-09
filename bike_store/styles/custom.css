@@ -22,6 +22,10 @@
     background-color: #ffffff !important;
 }
 
+.naw_header_wrap {
+    margin-top: 25px;
+}
+
 .wrap_logo {
     margin-right: 100px;
 }
@@ -69,6 +73,7 @@
     text-decoration: none;
 }
 
+
 .item_naw:last-child {
     margin: 0px;
 }
@@ -79,7 +84,7 @@
     color: #848484;
     letter-spacing: 0.22px;
     line-height: 13px;
-
+    transition: all 0.3s linear;
 }
 
 .nav_pages_wrapper {
@@ -105,11 +110,17 @@
     text-transform: uppercase;
     opacity: 1;
     margin: 20px 25px 20px 0px;
+    transition: all 0.3s linear;
 }
 
 .nav_pages_wrapper li a {
+    transition: all 0.3s linear;
     color: #000000;
     text-decoration: none;
+}
+
+.nav_pages_wrapper li a:hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .header_border {
@@ -448,6 +459,10 @@
 }
 
 /*PROMOTION*/
+.wrap_promotion_info {
+    display: flex;
+}
+
 .promotion_section {
     min-height: 140px;
     background-color: #CCD0D3;
@@ -496,7 +511,7 @@
 .form_send_mail {
     display: flex;
     margin-top: 35px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 .form_send_mail button {
@@ -542,6 +557,7 @@
     display: flex;
     min-width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer_section {
@@ -553,63 +569,74 @@
     min-width: 25%;
     margin-bottom: 50px;
 }
-.footer_contact_title{
+
+.footer_contact_title {
     letter-spacing: 0.3px;
     color: #000000;
     text-transform: uppercase;
-    font-size:15px;
-    line-height:18px;
-    margin-bottom:40px;
-    font-weight:600;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 40px;
+    font-weight: 600;
 }
-.footer_contact_sub_title{
+
+.footer_contact_sub_title {
     font-size: 14px;
     line-height: 40px;
     color: #000000;
     letter-spacing: 0.28px;
 }
-.footer_contact_icons i:nth-child(1n){
-    margin-right:10px
+
+.footer_contact_icons i:nth-child(1n) {
+    margin-right: 10px;
+    /*cursor:pointer;*/
 }
-.footer_contact_icons i{
-    font-size:40px;
+
+.footer_contact_icons i {
+    font-size: 40px;
     color: #000000;
 }
+
 /*FOOTER-BUTTON*/
-.footer_bottom_section{
+.footer_bottom_section {
     background-color: #F7F7F7;
     border-top: 1px solid #b6b6b6;
 }
-.footer_bottom_wrap_info{
-    display:flex;
-    justify-content:space-between;
+
+.footer_bottom_wrap_info {
+    display: flex;
+    justify-content: space-between;
     margin: 25px 0 25px 25px;
 }
-.footer_copyright{
+
+.footer_copyright {
     letter-spacing: 0px;
     color: #A0A0A0;
-    line-height:24px;
-    font-size:14px;
+    line-height: 24px;
+    font-size: 14px;
 }
-.footer_copyright_author{
+
+.footer_copyright_author {
     letter-spacing: 0px;
     color: #000000;
-    font-size:14px;
+    font-size: 14px;
 }
-.select_country_chose{
-    outline:none;
+
+.select_country_chose {
+    outline: none;
     border: 1px solid #B2B2B2;
     border-radius: 10px;
-    min-width:130px;
-    min-height:30px;
+    min-width: 130px;
+    min-height: 30px;
     padding: 5px;
 }
-.select_country_title{
+
+.select_country_title {
     letter-spacing: 0px;
     color: #A0A0A0;
     margin-right: 15px;
-    font-size:14px;
-    line-height:24px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 /*-------------MEDIA---------------*/
@@ -642,9 +669,19 @@
 }
 
 @media (max-width: 1000px) {
+    /*HEADER*/
+    .wrap_header_nav {
+        /*display: none;*/
+    }
+
     /*ORDER_BIKE-SLIDER*/
     .slider_item_wrap {
         display: none;
+    }
+
+    /*FOOTER*/
+    .footer_contacts_column {
+        width: 50%
     }
 }
 
@@ -665,5 +702,75 @@
     /*SLIDER-RECOMMENDED*/
     .recommended_card_wrap:nth-last-child(3) {
         display: none
+    }
+}
+
+@media (max-width: 800px) {
+    /*PROMOTION*/
+    .wrap_promotion_info {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .left_promotion_info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right_promotion_info {
+        width: 100%;
+    }
+
+    .form_send_mail {
+        display: block;
+    }
+
+    .send_info {
+        margin-bottom: 70px;
+    }
+}
+@media (max-width: 610px) {
+    /*SLIDER-RECOMMENDED*/
+    .recommended_card_wrap:nth-last-child(4) {
+        display: none
+    }
+}
+@media (max-width: 770px) {
+    /*HEADER*/
+    .header_border {
+        border: none;
+    }
+
+    .nav_pages_wrapper {
+        display: none;
+    }
+
+    .order_bike_info {
+        display: block;
+    }
+
+    .order_bike_header {
+        display: none;
+    }
+
+    .order_bike_info_left {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .order_bike_info_right {
+        width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    /*SECTION ORDER*/
+}
+@media (max-width: 440px) {
+    .footer_contacts_column {
+        width: 100%;
+        padding: 0 20px 0 20px;
     }
 }
