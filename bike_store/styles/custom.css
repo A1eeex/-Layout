@@ -672,10 +672,15 @@
 
 @media (max-width: 1000px) {
     /*HEADER*/
-    .wrap_header_nav {
-        /*display: none;*/
+    .wrap_search {
+        width: 100%;
+        padding:5px;
+        flex-wrap:wrap;
     }
+    .wrap_icons_navigations {
 
+        margin-left: 0px;
+    }
     /*ORDER_BIKE-SLIDER*/
     .slider_item_wrap {
         display: none;
