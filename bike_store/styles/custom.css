@@ -1,4 +1,4 @@
-/*BUTTONS*/
+/*-----BUTTONS----*/
 .btn {
     text-transform: uppercase;
     width: 100%;
@@ -567,6 +567,13 @@
     line-height: 40px;
     color: #000000;
     letter-spacing: 0.28px;
+}
+.footer_contact_icons i:nth-child(1n){
+    margin-right:10px
+}
+.footer_contact_icons i{
+    font-size:40px;
+    color: #000000;
 }
 
 /*-------------MEDIA---------------*/
