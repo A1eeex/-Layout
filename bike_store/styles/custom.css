@@ -1,3 +1,8 @@
+
+.container {
+    font-family: "Flama";
+}
+
 /*-----BUTTONS----*/
 .btn {
     text-transform: uppercase;
@@ -10,11 +15,6 @@
 
 .btn img {
     margin-left: 10px;
-}
-
-/*/////////////////////////*/
-.container {
-    font-family: "Flama";
 }
 
 /*HEADER*/
@@ -72,7 +72,6 @@
 .item_naw a {
     text-decoration: none;
 }
-
 
 .item_naw:last-child {
     margin: 0px;
@@ -209,7 +208,6 @@
     color: #000000;
     font-size: 22px;
     line-height: 27px;
-    letter-spacing: 0.22px;
 }
 
 .for_buy_price_wrap {
@@ -364,9 +362,8 @@
 }
 
 .recommended_slider_wrap {
-    margin-bottom: 80px;
-
     display: flex;
+    margin-bottom: 80px;
 }
 
 .recommended_card_wrap {
@@ -380,9 +377,8 @@
     max-width: 245px;
     height: 330px;
     cursor: pointer;
-    /*background-color: #c7c6c6;*/
     border: 1px solid #EFEFEF;
-    /*margin-bottom: 40px;*/
+
 
 }
 
@@ -505,9 +501,6 @@
 /*PROMOTION-right*/
 .right_promotion_info {
     width: 50%;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
 .form_send_mail {
@@ -703,7 +696,8 @@
     }
 
     .wrap_search {
-        width: 300px;
+        justify-content: center;
+        padding-left: 12px;
     }
 
 }
