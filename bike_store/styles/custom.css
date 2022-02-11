@@ -1,6 +1,6 @@
 
 .container {
-    font-family: "Flama-Basic",sans-serif;
+    font-family: "Flama-Basic", sans-serif;
     font-weight: 400;
     font-size: 14px;
 
@@ -212,7 +212,6 @@
 }
 
 .for_buy_title {
-    font-family: "Flama-Medium";
     letter-spacing: 0.22px;
     color: #000000;
     font-size: 22px;
@@ -289,6 +288,7 @@
 }
 
 .select_buy {
+    font-family: "Flama-Medium";
     width: 100%;
     border: transparent;
     font-weight: 600;
@@ -327,6 +327,11 @@
     margin-bottom: 15px;
 }
 
+.product_info_result {
+    font-family: "Flama-Medium";
+
+}
+
 .product_more_info_wrap {
     font-size: 14px;
     margin-bottom: 15px;
@@ -361,12 +366,10 @@
 }
 
 .recommended_title {
-    font-family: "Flama-Medium";
     text-transform: uppercase;
     color: #000000;
     font-size: 22px;
     margin-bottom: 20px;
-    font-weight: 600;
     line-height: 22px;
     letter-spacing: 0.44px;
 }
@@ -437,10 +440,12 @@
 }
 
 .bestseller__card-active {
+    font-family: "Flama-Medium";
+    padding: 5px;
     text-align: center;
     border-radius: 0px 6px 6px 0px;
-    width: 86px;
-    height: 30px;
+    min-width: 86px;
+    min-height: 30px;
     background-color: #000000;
     color: #ffffff;
     position: absolute;
@@ -495,6 +500,7 @@
 }
 
 .promotion_title {
+    font-family: "Flama-Medium";
     font-size: 22px;
     font-weight: bold;
     margin: 30px 0px 10px 0px;
@@ -598,7 +604,7 @@
 
 .footer_contact_icons i:nth-child(1n) {
     margin-right: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .footer_contact_icons i {
@@ -648,18 +654,22 @@
     font-size: 14px;
     line-height: 24px;
 }
+
 /*FOOTER-CONTACTS-accordion*/
-.footer_contacts_accordion_wrapper{
+.footer_contacts_accordion_wrapper {
     display: none;
     min-width: 100%;
 }
-.title_footer_accordion{
+
+.title_footer_accordion {
     font-family: "Flama-Medium";
 }
-.footer_contact_icons{
+
+.footer_contact_icons {
     padding: 0px;
-    margin:30px 0px;
+    margin: 30px 0px;
 }
+
 /*-------------MEDIA---------------*/
 @media (max-width: 1400px) {
     /*HEADER media*/
@@ -802,13 +812,15 @@
     }
 
     /*FOOTER_BOTTOM_CONTACTS-change to accordion*/
-    .footer_contacts_wrapper{
+    .footer_contacts_wrapper {
         display: none;
 
     }
-    .footer_contacts_accordion_wrapper{
+
+    .footer_contacts_accordion_wrapper {
         display: block;
     }
+
     .footer_contact_icons i:nth-child(1n) {
         margin-right: 20px;
     }
