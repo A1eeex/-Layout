@@ -361,6 +361,7 @@
 }
 
 .recommended_title {
+    font-family: "Flama-Medium";
     text-transform: uppercase;
     color: #000000;
     font-size: 22px;
@@ -802,7 +803,8 @@
 
     /*FOOTER_BOTTOM_CONTACTS-change to accordion*/
     .footer_contacts_wrapper{
-        display: none
+        display: none;
+
     }
     .footer_contacts_accordion_wrapper{
         display: block;
