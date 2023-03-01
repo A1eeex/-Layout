@@ -116,9 +116,15 @@ body {
     text-decoration: none;
     color: #aab9e2
 }
+
 .top_menu a:hover {
     color: #3d59ad;
     text-decoration: none
+}
+.how_to_buy a {
+    padding: 4px 10px;
+    border-radius: 30px;
+    background: #a77bff52;
 }
 .top_menu_btn {
     font-size: 12px;
@@ -954,7 +960,7 @@ button.slick-next:before, button.slick-prev:before {
     color: #202124;
 }
 #select-option{
-    width: 95%;
+    width: 97%;
 }
 .modal-content form select,
 .modal-content form input[type="text"],
