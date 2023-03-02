@@ -964,6 +964,7 @@ button.slick-next:before, button.slick-prev:before {
 }
 .modal-content form select,
 .modal-content form input[type="text"],
+.modal-content form input[type="tel"],
 .modal-content form input[type="email"] {
     display: block;
     width: 90%;
@@ -981,6 +982,7 @@ button.slick-next:before, button.slick-prev:before {
 
 .modal-content form select:focus,
 .modal-content form input[type="text"]:focus,
+.modal-content form input[type="tel"]:focus,
 .modal-content form input[type="email"]:focus {
     outline: 0;
     border-color: #1a73e8;
