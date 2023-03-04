@@ -8,7 +8,7 @@ p {
     margin: 0
 }
 body {
-    color: #ffffff;
+    /*color: #ffffff;*/
     color: var(--white_text);
     margin: 0;
     -webkit-box-sizing: border-box;
