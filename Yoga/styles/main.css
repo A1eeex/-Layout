@@ -596,6 +596,20 @@ button.slick-next:before, button.slick-prev:before {
     border: 1px solid #7492ec;
     color: #fff
 }
+.telegram_btn_wap .section_renewal_content_left_btn {
+    background: -o-linear-gradient(left, #1c4ce0, #4f0cd2);
+    background: -webkit-gradient(linear, left top, right top, from(#1c4ce0), to(#4f0cd2));
+    background: linear-gradient(to right, #1c4ce0, #4f0cd2);
+
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    margin-top: 12px;
+}
+.telegram_btn_wap .section_renewal_content_left_btn i {
+    font-size: 20px;
+    margin-left: 8px;
+}
 .section_renewal_content_left {
     width: 50%;
     padding: 245px 0 190px 185px
