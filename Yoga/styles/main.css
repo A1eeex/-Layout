@@ -1,6 +1,6 @@
 :root {
-    var-main-bg-color: #524A4E;
-
+    --bg_main_color: #524A4E;
+    --white_text: #ffffff;
 }
 
 
@@ -9,12 +9,12 @@ p {
 }
 body {
     color: #ffffff;
-    width: 100%;
+    color: var(--white_text);
     margin: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
-    background: #524A4E;
+    background: var(--bg_main_color);
 }
 .header {
     /*position: fixed;*/
@@ -27,7 +27,7 @@ body {
     justify-content: center;
     z-index: 10;
     /*background-color: rgba(234, 240, 248, .5);*/
-    background: #524A4E;
+    background: var(--bg_main_color);
 }
 .section_menu_header {
     display: -webkit-box;
@@ -191,7 +191,7 @@ body {
     padding: 0 15px 0 15px
 }
 .section_menu_header {
-    background: #524A4E;
+    background: var(--bg_main_color);
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
@@ -218,18 +218,31 @@ body {
     left: 0;
     max-width: 240px;
     top: -70px;
-    color: #524A4E;
+    color: var(--bg_main_color);
 }
 .section_header_text {
     text-align: right;
     font-size: 72px;
     font-weight: 300;
-    color: #7492ec;
+    color: var(--white_text);
     opacity: 0;
 
 }
 .section_header_text:first-child {
     padding-right: 65px
+}
+.about_section{
+    padding: 20px ;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.about_section .about_title{
+     color: var(--white_text);
+    font-weight: 700;
+}
+.about_section .about_text{
+     color: var(--white_text);
+    font-size: 20px;
 }
 .section_about {
     width: 100%;
@@ -315,7 +328,7 @@ body {
     width: 100%;
     overflow: auto;
     /*background: url(../images/classesbg1.png) no-repeat;*/
-    background: #524A4E;
+    background: var(--bg_main_color);
 }
 .about_classes {
     position: relative
@@ -414,7 +427,7 @@ button.slick-next:before, button.slick-prev:before {
 .about_classes_icon_text {
     font-size: 13px;
     font-family: Lato, sans-serif;
-    color: #666;
+    color: var(--white_text);
     padding-left: 20px;
     margin-bottom: 15px
 }
@@ -1141,8 +1154,7 @@ button.slick-next:before, button.slick-prev:before {
     }
     .section_classes {
         overflow-x: hidden;
-        background: 0 0;
-        background-color: #f1f3f8
+        background: var(--bg_main_color);
     }
     .section_about {
         padding-bottom: 0
@@ -1228,7 +1240,7 @@ button.slick-next:before, button.slick-prev:before {
     #chet_one:checked+nav {
         display: block;
         /*background-color: rgba(255, 255, 255, 1);*/
-        background: #524A4E;
+        background: var(--bg_main_color);
         border-radius: 10px;
         color: #36aeea;
         right: 0;
