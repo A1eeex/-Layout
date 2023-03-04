@@ -247,7 +247,8 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 50%;
-    padding-left: 115px
+    padding-left: 115px;
+    padding-top: 100px;
 }
 .list_icon {
     padding-top: 15px;
@@ -988,6 +989,11 @@ button.slick-next:before, button.slick-prev:before {
     border-color: #1a73e8;
     box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.3);
 }
+#submit_form_btn:disabled {
+     opacity: 0.5;
+     cursor: not-allowed;
+     /*background-color: #c71291!important;*/
+ }
 
 .modal-content form input[type="submit"] {
     display: inline-block;
@@ -1002,6 +1008,7 @@ button.slick-next:before, button.slick-prev:before {
     cursor: pointer;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+
 
 .modal-content form input[type="submit"]:hover,
 .modal-content form input[type="submit"]:focus {
