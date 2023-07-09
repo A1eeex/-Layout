@@ -1,139 +1,81 @@
 $(".about_classes_info_all").slick({
-    dots: !1,
-    infinite: !0,
-    speed: 300,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [{
-        breakpoint: 1200,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: !0,
-            dots: !0
-        }
-    }, {
-        breakpoint: 800,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: !0
-        }
-    }, {
-        breakpoint: 600,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: !0
-        }
-    }, {
-        breakpoint: 480,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: !0
-        }
-    }]
-}), $(".section_special_teacher_all").slick({
+  dots: !1,
+  infinite: !0,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: !0,
+        dots: !0,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: !0,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: !0,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: !0,
+      },
+    },
+  ],
+}),
+  $(".section_special_teacher_all").slick({
     dots: !0,
     infinite: !0,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 3,
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 1200,
         settings: {
-            slidesToShow: 3,
-            slidesToScroll: 4,
-            infinite: !0,
-            dots: !0
-        }
-    }, {
+          slidesToShow: 3,
+          slidesToScroll: 4,
+          infinite: !0,
+          dots: !0,
+        },
+      },
+      {
         breakpoint: 800,
         settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-        }
-    }, {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
         breakpoint: 600,
         settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-        }
-    }, {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 480,
         settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-        }
-    }]
-})
-const modal = document.getElementById("modal");
-const btn = document.getElementById("open-modal-btn");
-const span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-}
-// validate form
-const full_name = document.querySelector('#full_name');
-const phone_number = document.querySelector('#phone_number');
-const emailInput = document.querySelector('#email_form');
-const submitButton = document.querySelector('#submit_form_btn');
-
-// Disable the submit button initially
-submitButton.disabled = true;
-
-// Add event listeners to each input field
-full_name.addEventListener('input', validateForm);
-phone_number.addEventListener('input', validateForm);
-emailInput.addEventListener('input', validateForm);
-
-// Function to validate the form
-function validateForm() {
-    if (full_name.value.trim() !== '' && phone_number.value.trim() !== '' && emailInput.value.trim() !== '' && isValidEmail(emailInput.value.trim())) {
-        submitButton.disabled = false;
-    } else {
-        submitButton.disabled = true;
-    }
-}
-
-// Function to check if the email is valid
-function isValidEmail(email) {
-    const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
-    return emailRegex.test(email);
-}
-
-
-// emailJs
-
-function SendMail() {
-    const serviceID = 'service_2y2mail';
-    const templateID = 'template_xzzkf2h';
-    const params = {
-        form_name: document.getElementById('full_name').value,
-        email_form: document.getElementById('email_form').value,
-        select_option_form: document.getElementById('select_option_form').value,
-        message_form: document.getElementById('message_form').value
-    }
-    //service ID, template ID
-    emailjs.send(serviceID, templateID, params).then(function (res) {
-        document.getElementById('full_name').value=''
-        document.getElementById('email_form').value=''
-        document.getElementById('select_option_form').value=''
-        document.getElementById('message_form').value=''
-        console.log('success!' + res.status)
-    })
-        .catch((err) =>console.log(err));
-}
-
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
